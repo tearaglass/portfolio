@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Selected work — Delaney Mills</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="ready.css"></head><body><main class="reading"><nav><a href="index.html#work">All work</a><a href="resume.html">Resume</a><a href="mailto:delaneymills@gmail.com">Contact</a></nav><article id="detail"></article></main>
+<!-- Reuse the public project descriptions without exposing private source notes. -->
+<dialog id="project-dialog" hidden><button class="dialog-close"></button><span id="dialog-type"></span><span id="dialog-title"></span><span id="dialog-summary"></span><span id="dialog-role"></span><span id="dialog-tools"></span><span id="dialog-status"></span><span id="dialog-question"></span><span id="dialog-artifact"></span><a id="dialog-source"></a><div id="dialog-media"></div></dialog><script src="script.js"></script><script src="evidence.js"></script><script>
+const key=new URLSearchParams(location.search).get('work'); const p=projects[key]; const root=document.querySelector('#detail');
+function add(tag,text,cls){const el=document.createElement(tag);el.textContent=text;if(cls)el.className=cls;root.append(el);return el;}
+if(!p){add('h1','Selected work');add('p','Choose a project from the portfolio.');}else{
+document.title=p.title+' — Delaney Mills';add('p',p.type,'eyebrow');add('h1',p.title);add('p',p.summary);add('p',p.role+' · '+p.status,'meta');
+if(previews[key]){const img=document.createElement('img');img.src=previews[key];img.alt=p.title+' work sample';root.append(img);}
+add('h2','Contribution');add('p',p.artifact);add('h2','Approach');add('p',p.question);add('p',p.tools,'meta');
+if(['hymnal','obs','obs-dashboard','drum','drone','cricket','bots'].includes(key))add('p','Independent project. Concept, design, and implementation directed by Delaney using AI-assisted development. Prototype status is intentional; this is not presented as a finished commercial release.');
+if(key==='omakasea'||key==='crypto')add('p','Work produced within the Omakasea team. Contributions are documentation, education, creative direction, community, and operations—not sole authorship of the underlying platform. Samples are historical work, not current technical or financial guidance. The workshop is credited to Teara Glass.');
+if(key==='oct7')add('p','Ongoing freelance work. Newsletter design and assembly by Delaney; product photography, trademarks, and merchandise belong to their respective owners. The sample is a design preview, not evidence of campaign delivery or sales results.');
+for(const [label,url] of evidence[key]||[]){const a=add('a',label+' ↗','source-link');a.href=url;root.append(document.createElement('br'));}
+}
+</script></body></html>

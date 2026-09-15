@@ -1,0 +1,30 @@
+# Local preservation and dated delivery artifacts
+backups/
+share-ready/
+share-ready-*/
+*.zip
+
+# Internal reviews and build helpers
+PORTFOLIO_REVIEW-*.md
+SHARING_STATUS-*.md
+IMPLEMENTATION_STATUS.md
+GITHUB-HOSTING.md
+selection.json
+package-portfolio.mjs
+prepare-newsletter.mjs
+render-samples.swift
+
+# Working material not used by the public site
+application-materials/
+current-work/
+documentation/
+dj-mix/
+graphic-design/
+music/
+writing-samples/
+professional-work/clients/
+professional-work/employers/
+
+# Local/editor files
+.DS_Store
+node_modules/
