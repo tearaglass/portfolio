@@ -2,9 +2,9 @@
 
 - Status: Working prototype
 - Date: 2026
-- Medium / tools: Browser simulation, Next.js/Vite, JavaScript/TypeScript
+- Medium / tools: TypeScript, React, Canvas 2D, IndexedDB, Vinext/Vite, Web Audio
 - Role: Creator, designer, and developer
-- Link: Local prototype available on request
+- Link: [Recorded demonstration and case study](../../samples/drone-fields/case-study.html)
 
 ## Short description
 
@@ -27,9 +27,9 @@ presenting a purely decorative animation.
 
 ## Documentation
 
-- Hero image: To capture from the prototype
-- Demo video: To record a short simulation run
-- Screenshots: Map, drone, and state views
+- Hero image: `samples/drone-fields/local.png`
+- Demo video: `samples/drone-fields/demo.mp4` (24 seconds, silent)
+- Screenshots: `samples/drone-fields/map.png` and `samples/drone-fields/inspection.png`
 - Process material: `SUMMARY-2026-09-07.md`, `QA_CHECKLIST.md`, and `scripts/`
 
 ## Credits and access
@@ -37,3 +37,18 @@ presenting a purely decorative animation.
 - Collaborators: None recorded
 - Credits: None recorded
 - Accessibility notes: Simulation state should have a readable text or table view alongside visual motion
+
+## Portfolio verification — September 15, 2026
+
+Production build and TypeScript checks passed. Both current region runtimes
+passed identical-input state/history, exact replay, and save round-trip checks.
+Isolated browser checks passed for map/local continuity, keyboard selection,
+reload, valid/invalid imports, replay preservation, mobile controls, and reduced
+motion. The demo and screenshots were captured from the current local app.
+
+One legacy acceptance test fails when the internal drone array is reversed:
+external-event attribution follows the first array entry. Normal save/replay
+verification passes; a change to attribution must preserve prior archives.
+
+Locations remain provisional. Sources are frozen, and the optional shared-world
+and local test-chain services are outside this portfolio demonstration.

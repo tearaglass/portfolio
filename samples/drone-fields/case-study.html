@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Drone Fields: a browser simulation with persistent machine lives, geographic data, and inspectable replay. A project by Delaney Mills.">
+  <title>Drone Fields — Delaney Mills</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../ready.css">
+  <style>
+    figure{margin:32px 0}video{display:block;width:100%;background:#19142e}figcaption{margin-top:10px;font-size:14px;line-height:1.5;color:var(--muted)}.reading nav{flex-wrap:wrap}.reading img{display:block;width:100%;height:auto}
+  </style>
+</head>
+<body>
+  <main class="reading">
+    <nav><a href="../../index.html#work">All work</a><a href="../../project.html?work=drone">Project overview</a><a href="../../resume.html">Resume</a></nav>
+    <article>
+      <p class="eyebrow" style="margin-top:40px">Simulation / interactive world</p>
+      <h1>Drone Fields</h1>
+      <p>A browser ecology of autonomous machines. Each drone has routes, energy, relationships, and a recorded life. Move between a geographic map and a close local view, then inspect the history behind what happened.</p>
+      <p class="meta">2026 · Independent project · Working local prototype</p>
+      <figure>
+        <video controls playsinline preload="metadata" poster="local.png" aria-label="Silent recording of Drone Fields switching between its map, local view, and drone details">
+          <source src="demo.mp4" type="video/mp4">
+          <a href="demo.mp4">Download the demonstration</a>
+        </video>
+        <figcaption>24-second silent recording from the running application: map → local view → selected drone details → map. The still images below show the same interface without motion.</figcaption>
+      </figure>
+      <h2>My contribution</h2>
+      <p>I developed the concept, visual direction, interaction, and simulation design, and directed implementation and testing using AI coding tools. The work includes the browser interface, geographic data integration, save validation, life history, and replay. Geographic and environmental datasets are credited separately.</p>
+      <p class="meta">TypeScript · React · Canvas 2D · IndexedDB · Vinext/Vite · optional Web Audio</p>
+      <h2>Three decisions that shape the system</h2>
+      <ol>
+        <li><strong>Keep time independent of rendering.</strong> Fixed simulation steps and recorded inputs let a saved life be replayed. The map and local view render the same state, so changing the view preserves the selected drone and simulation time.</li>
+        <li><strong>Give source data a recorded boundary.</strong> Captured geography and environmental records carry provenance. The simulation can use those frozen inputs without depending on live provider availability. Its behavioral rules are fictional and explicit.</li>
+        <li><strong>Let people inspect without rewriting a life.</strong> The history view reads recorded events and replays earlier ticks. Import validates a save before replacing current state; an invalid file leaves the existing archive intact.</li>
+      </ol>
+      <figure><img src="map.png" alt="Drone Fields geographic map with drone 203 selected beside the river" width="1280" height="800" loading="lazy"><figcaption>Map view combines captured geography with the current simulated drone state.</figcaption></figure>
+      <figure><img src="local.png" alt="The same selected drone in a sparse local side view above a stepped horizon" width="1280" height="800" loading="lazy"><figcaption>The local view changes the presentation while preserving selection, time, and saved life.</figcaption></figure>
+      <h2>Verification</h2>
+      <p>On September 15, 2026, the production build and TypeScript check passed. Current-runtime checks reproduced the same state and history from the same inputs in both regions, verified exact replay, and round-tripped saves. Browser checks covered map/local continuity, keyboard selection, reload, valid and invalid imports, replay preservation, mobile controls, and reduced motion, with no application exceptions.</p>
+      <figure><img src="inspection.png" alt="Life history and replay controls showing source events, encounters, and collapsed decision details" width="1280" height="800" loading="lazy"><figcaption>History and decision details provide a readable way to examine the simulation.</figcaption></figure>
+      <h2>Current limits and next work</h2>
+      <p>This page presents a recorded local prototype. The existing Three Mile Island and Ashburn regions are provisional studies; final location design remains open. Data is frozen, not live monitoring. The optional shared-world and local test-chain edition is outside this demonstration.</p>
+      <p>A legacy acceptance check exposed order-dependent attribution of external events when the internal drone array is reversed. That limitation is tracked separately; the tested normal save/replay path remains reproducible. A runtime change needs to preserve existing life archives.</p>
+      <p>The next product step is a deliberate location and pacing pass, followed by evaluation of a distributable desktop edition.</p>
+      <p class="meta">Geographic sources include © OpenStreetMap contributors and USGS 3DEP elevation. Source records and limits remain documented in the project.</p>
+    </article>
+  </main>
+</body>
+</html>
