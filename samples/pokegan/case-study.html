@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PokeGAN / Geomint — Delaney Mills</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../ready.css">
+</head>
+<body>
+  <main class="reading">
+    <nav><a href="../../index.html#applied">All work</a><a href="../../resume.html">Resume</a><a href="mailto:delaneymills@gmail.com">Contact</a></nav>
+    <article>
+      <p class="eyebrow">Interactive website · 2022 · Omakasea</p>
+      <h1>PokeGAN / Geomint</h1>
+      <p>I built PokeGAN's user-facing website as an explorable RPG Maker MZ world. Visitors met characters, discovered whitelist interactions, and used a location-based mint experience. The exported game was the website, rather than a game embedded inside a separate site.</p>
+      <figure style="margin:30px 0">
+        <video controls playsinline muted preload="metadata" poster="world.png" aria-label="Gameplay excerpt · archived recording" style="display:block;width:100%;background:#111"><source src="gameplay.mp4" type="video/mp4"></video>
+        <figcaption class="meta">Gameplay excerpt · archived recording</figcaption>
+      </figure>
+      <h2>My contribution</h2>
+      <p>I assembled the maps, customized template-based sprites to resemble our Bali team, wrote character dialogue, and built the game's interaction and event logic. I used provided and third-party map assets. The development team supplied the backend, blockchain and location-verification functionality.</p>
+      <h2>The experience</h2>
+      <p>Before mint day, visitors could talk to characters to join the whitelist. For Geomint, participants visited designated art museums. Location eligibility was handled off-chain. When it was recognized, a character directed them to a patch of grass, where the game presented the mint quantity interaction and handed off to the wallet.</p>
+      <h2>The implementation challenge</h2>
+      <p>The difficult part was connecting game events to wallet and blockchain events. The recovered export contains separate states for eligibility checks, permission, quantity selection, mint requests and success. I designed the dialogue and interaction logic around those states, working with the developers responsible for the external systems.</p>
+      <h2>Evidence and outcome</h2>
+      <p>The surviving full recording shows the character interaction, quantity selection and wallet handoff. The gameplay-only excerpt above omits wallet screens and audio. A recovered June 2022 export contains the same Teara dialogue. A successful PokeGAN allowlist mint is also recorded on Ethereum on June 20, 2022. The location interaction happened off-chain and is not represented by that transaction.</p>
+      <p><a href="https://eth.blockscout.com/tx/0xda1d062762165d2b3f100e8c575cb1b3339814ed2fb6929973f10853a83bad47">Successful PokeGAN mint · Ethereum record ↗</a></p>
+      <h2>Credits and current status</h2>
+      <p>Frontend, map assembly, adapted character sprites, dialogue and RPG Maker event logic: Delaney Mills. Backend, blockchain and location verification: the Omakasea development team. RPG Maker and third-party assets/plugins retain their original credits.</p>
+      <p>This is archived professional work from notnintendo.com, not a currently supported minting service. The recovered source has not been rebuilt or tested as a live demo. PokeGAN's generative model and smart contracts were not my engineering work.</p>
+    </article>
+  </main>
+</body>
+</html>

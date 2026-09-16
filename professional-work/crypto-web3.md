@@ -2,14 +2,15 @@
 
 ## What it is
 
-Product, documentation, community, and cultural work across crypto projects, with an emphasis on making unfamiliar systems legible to creators and participants.
+Product, technical documentation writing, community, and cultural work across crypto projects, with an emphasis on making unfamiliar systems legible to creators and participants.
 
 ## Selected work
 
-- **ETH Gobblers:** named the NFTs, co-led creative direction, helped develop gamification logic, and wrote the project documentation.
-- **PokeGAN by Not Nintendo:** created RPG Maker maps, characters, and story dialogue; researched location targets and supported token-gated education.
-- **Omakasea NFT Launchpad:** helped onboard creators, wrote setup guides, and managed community education for a receipts-based minting system.
+- **ETH Gobblers:** named the Gooey creatures, contributed community-informed product-mechanics suggestions, and wrote technical documentation explaining care, mitosis and other interactions. No artwork or smart-contract implementation credit.
+- **PokeGAN / Geomint:** built the user-facing RPG Maker website, including map assembly, adapted sprites, character dialogue and whitelist/mint event logic. The team supplied backend, blockchain and off-chain location verification.
+- **MGLTH:** wrote, narrated and edited promotional video, including footage and music selection. Production credit does not imply ownership of every third-party media asset.
+- **Omakasea NFT Launchpad:** operations consulting and artist recruitment.
 
 ## Scope
 
-This is presented as operations, documentation, creative direction, community education, and product translation—not as a claim of core software engineering or smart-contract authorship.
+This is presented as technical documentation writing, creative production, community education, operations and product translation, with frontend implementation specifically for PokeGAN—not generative-model, backend or smart-contract authorship. Historical samples are not current technical or financial guidance.
