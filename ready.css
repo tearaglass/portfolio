@@ -28,3 +28,19 @@
 .evidence-grid > a.evidence-card > .sample-number{background:#d7d2c0}
 .evidence-grid > a.evidence-card{display:grid;grid-template-rows:auto minmax(52px,auto) minmax(68px,auto) minmax(36px,auto);align-content:start}
 .evidence-grid > a.evidence-card > span{align-self:end}
+
+/* Palette trial: paper, mint, violet, berry, and dark green. */
+:root{--paper:#f5f9f1;--surface:#dbf1d0;--violet:#9737f1;--rust:#a82e73;--ink:#082110;--acid:#dbf1d0;--blue:#dbf1d0;--muted:#082110;--line:rgba(8,33,16,.25)}
+.hero h1 em{color:var(--rust)}
+.availability i{background:var(--violet)}
+.circle-link{background:var(--violet);color:var(--paper);border-color:var(--violet)}
+.circle-link:hover{background:var(--rust);border-color:var(--rust)}
+.evidence-card:hover,.applied-section{background:var(--surface)}
+.evidence-grid > a.evidence-card > .sample-number,.sample-number{background:var(--surface)}
+.applied-card{background:var(--paper)}
+.applied-card.card-obs{background:var(--violet);color:var(--paper)}
+.applied-card.card-crypto{background:var(--rust);color:var(--paper)}
+.card-obs .card-index,.card-obs small,.card-crypto .card-index,.card-crypto small{color:inherit}
+.project-row:after,.dialog-media,.dialog-media[data-project]{background:var(--surface)}
+.dialog-sections p{color:var(--ink)}
+.profile-links a:hover{color:var(--rust)}
