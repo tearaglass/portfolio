@@ -18,3 +18,6 @@
 .newsletter-samples a:hover img{outline:2px solid var(--rust);outline-offset:3px}
 .newsletter-samples span{line-height:1.5}
 @media(max-width:760px){.evidence-grid{grid-template-columns:1fr}.newsletter-samples{grid-template-columns:1fr;gap:24px}.newsletter-overview{grid-template-columns:1fr}.newsletter-overview .sample-number{grid-row:auto;width:100%;height:72px}.newsletter-samples img{height:auto}}
+
+/* Let previews fill the card width without artificial letterboxing. */
+.evidence-grid > .evidence-card img{display:block;height:auto;object-fit:contain;background:transparent}
