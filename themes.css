@@ -1,0 +1,78 @@
+.hero h1 em{color:var(--headline)}
+.circle-link{color:var(--on-primary)}
+.circle-link:hover{background:var(--secondary);border-color:var(--secondary);color:var(--on-secondary)}
+.applied-card.card-obs{color:var(--on-primary)}
+.applied-card.card-crypto{background:var(--secondary);color:var(--on-secondary)}
+
+.circle-link,.applied-card.card-obs{background:var(--primary-background)}
+.circle-link:hover{background:var(--secondary)}
+
+.applied-section{color:var(--on-surface)}
+.applied-section .eyebrow,.applied-section .section-intro>p:last-child{color:var(--surface-accent)}
+.evidence-grid > a.evidence-card:hover,.project-row:hover{color:var(--on-surface)}
+.evidence-grid > a.evidence-card:hover span,.project-row:hover .row-no,.project-row:hover .row-type{color:inherit}
+.evidence-grid > a.evidence-card > .sample-number{color:var(--on-surface)}
+
+/* Favorite 1: translucent surfaces with rounded, reflective edges. */
+html[data-theme="1"] body{
+  background:
+    radial-gradient(ellipse at 90% 12%,#9737f126,transparent 36%),
+    radial-gradient(ellipse at 4% 38%,#dbf1d0,transparent 48%),#f5f9f1;
+}
+html[data-theme="1"] :is(.evidence-card,.applied-card,.sample-links a){
+  background:linear-gradient(135deg,#ffffffb8,#ffffff38);
+  color:#082110;border:1px solid #ffffffcc;border-radius:22px;
+  backdrop-filter:blur(20px) saturate(145%);-webkit-backdrop-filter:blur(20px) saturate(145%);
+  box-shadow:inset 0 1px 1px #fff,inset 0 -1px 1px #08211018,0 12px 32px #0821100d;
+}
+html[data-theme="1"] .evidence-card img{border-radius:10px}
+html[data-theme="1"] .applied-section{background:#dbf1d050}
+html[data-theme="1"] .circle-link{
+  background:radial-gradient(circle at 28% 18%,#ffffffe6,transparent 52%),linear-gradient(140deg,#dbf1d099,#9737f140);
+  color:#082110;border:1px solid #fff;
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  box-shadow:inset 2px 3px 4px #fff,inset -3px -4px 8px #9737f12b,0 16px 36px #9737f11f;
+}
+html[data-theme="1"] .evidence-card:hover{background:#ffffffb8}
+/* Favorite 12: broad color washes, gilded highlights, and saturated accents. */
+html[data-theme="12"] body{
+  background:
+    radial-gradient(ellipse at 95% 4%,#9737f150,transparent 34%),
+    radial-gradient(ellipse at 5% 24%,#e6ceb7,transparent 42%),
+    linear-gradient(155deg,#ecd4df 5%,#f5f9f1 48%,#e6ceb7 75%,#ecd4df);
+}
+html[data-theme="12"] .hero h1 em{
+  background:linear-gradient(105deg,#220f24 0%,#a82e73 36%,#9737f1 65%,#854245 90%);
+  background-clip:text;-webkit-background-clip:text;color:transparent;
+}
+html[data-theme="12"] .circle-link{
+  background:radial-gradient(circle at 24% 15%,#e6ceb7,transparent 42%),linear-gradient(140deg,#9737f1,#a82e73 65%,#220f24);
+  color:#fff;border-color:#a82e73;box-shadow:0 16px 42px #a82e732b;
+}
+html[data-theme="12"] .evidence-card{
+  background:linear-gradient(145deg,#f5f9f1d9,#ecd4dfb3 55%,#e6ceb7cc);
+  border-color:#a82e7340;
+}
+html[data-theme="12"] .applied-section{
+  background:radial-gradient(ellipse at 100% 10%,#9737f130,transparent 65%),linear-gradient(125deg,#e6ceb7,#ecd4df 65%,#f5f9f1);
+}
+html[data-theme="12"] .applied-card{background:linear-gradient(145deg,#f5f9f1,#ecd4df)}
+html[data-theme="12"] :is(.applied-card.card-obs,.applied-card.card-crypto){
+  background:linear-gradient(130deg,#9737f1,#a82e73 65%,#220f24);color:#fff;
+}
+
+/* Glass surfaces over favorite 12's existing color washes. */
+html[data-theme="12"] :is(.evidence-card,.applied-card,.sample-links a){
+  background:linear-gradient(135deg,#ffffffb8,#ecd4df38 65%,#e6ceb745);
+  color:#220f24;border:1px solid #ffffffcc;border-radius:22px;
+  backdrop-filter:blur(20px) saturate(145%);-webkit-backdrop-filter:blur(20px) saturate(145%);
+  box-shadow:inset 0 1px 1px #fff,inset 0 -1px 1px #a82e7326,0 12px 32px #220f2410;
+}
+html[data-theme="12"] .evidence-card img{border-radius:10px}
+html[data-theme="12"] .circle-link{
+  background:radial-gradient(circle at 28% 18%,#ffffffe6,transparent 52%),linear-gradient(140deg,#e6ceb799,#9737f140 65%,#a82e7350);
+  color:#220f24;border:1px solid #fff;
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  box-shadow:inset 2px 3px 4px #fff,inset -3px -4px 8px #a82e7338,0 16px 36px #a82e7326;
+}
+html[data-theme="12"] .evidence-card:hover{background:#ffffffb8}
