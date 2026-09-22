@@ -7,7 +7,7 @@ projects.oct7.tools = 'WordPress, Mailchimp, Canva, technical support';
 const evidence = {
   drone: [['Read the case study', 'samples/drone-fields/case-study.html'], ['Watch the 24-second demo', 'samples/drone-fields/demo.mp4']],
   hymnal: [['Watch the 15-second performance', 'samples/hymnal-engine/demo.mp4'], ['View the independent output', 'samples/hymnal-engine/output.png']],
-  omakasea: [['Workshop deck · 2022', 'samples/nft-workshop-2022.pdf'], ['PokeGAN / Geomint', 'samples/pokegan/case-study.html'], ['Writing, design + production', 'supporting-work.html']],
+  omakasea: [['NFT workshop · Revised edition, September 2026 (PDF)', 'samples/nft-workshop-september-2026.pdf'], ['NFT workshop · Revised edition, September 2026 (PowerPoint)', 'samples/nft-workshop-september-2026.pptx'], ['Workshop deck · 2022', 'samples/nft-workshop-2022.pdf'], ['PokeGAN / Geomint', 'samples/pokegan/case-study.html'], ['Writing, design + production', 'supporting-work.html']],
   crypto: [['ETH Gobblers technical documentation', 'samples/eth-gobblers-documentation.pdf'], ['PokeGAN / Geomint', 'samples/pokegan/case-study.html']],
   pokegan: [['Read the case study', 'samples/pokegan/case-study.html'], ['Gameplay excerpt · archived recording', 'samples/pokegan/gameplay.mp4']],
   drum: [['Play the instrument', 'samples/drum-machine/index.html']],
