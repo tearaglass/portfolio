@@ -21,3 +21,10 @@
 
 /* Let previews fill the card width without artificial letterboxing. */
 .evidence-grid > .evidence-card img{display:block;height:auto;object-fit:contain;background:transparent}
+
+/* Use matching media frames for project cards, including the instrument tile. */
+.evidence-grid > a.evidence-card > img,
+.evidence-grid > a.evidence-card > .sample-number{width:100%;height:auto;aspect-ratio:16/9;flex:none;object-fit:cover;background:transparent}
+.evidence-grid > a.evidence-card > .sample-number{background:#d7d2c0}
+.evidence-grid > a.evidence-card{display:grid;grid-template-rows:auto minmax(52px,auto) minmax(68px,auto) minmax(36px,auto);align-content:start}
+.evidence-grid > a.evidence-card > span{align-self:end}
